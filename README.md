@@ -1,20 +1,17 @@
-# nhl-crawler
+# game-of-life
 
-FIXME: description
+...
 
 ## Installation
 
-Download from http://example.com/FIXME.
+...
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar nhl-crawler-0.1.0-standalone.jar [args]
+Just use the REPL
 
 ## Options
 
-FIXME: listing of options this app accepts.
 
 ## Examples
 
@@ -30,7 +27,7 @@ FIXME: listing of options this app accepts.
 
 ## License
 
-Copyright © 2017 FIXME
+Copyright © 2017
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
