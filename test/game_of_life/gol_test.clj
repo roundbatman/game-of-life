@@ -1,6 +1,6 @@
-(ns nhl-crawler.core-test
+(ns game-of-life.gol-test
   (:require [clojure.test :refer :all]
-            [nhl-crawler.core :refer :all]))
+            [game-of-life.gol :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
