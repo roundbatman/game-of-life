@@ -48,12 +48,12 @@
                (inc y))))))
 
 (defn create-board
-  [max-x max-y]
+  [width height]
   (loop [result (transient [])
          y 0]
-    (if (<= max-y y)
+    (if (<= height y)
       (persistent! result)
-      (recur (conj! result (vec (repeatedly max-x #(init-cell))))
+      (recur (conj! result (vec (repeatedly width #(init-cell))))
              (inc y)))))
 
 (defn still-alive? [board]
