@@ -17,9 +17,9 @@
     dead))
 
 (defn get-at [board x y]
-  (try
-    (nth (nth board y) x)
-    (catch IndexOutOfBoundsException e 0)))
+  (let [height (count board)
+        width (count (nth board 0))]
+    (nth (nth board ( mod y height)) (mod x width))))
 
 (defn get-neighbour-values [board x y]
   (+
@@ -69,7 +69,7 @@
   (print-board board)
   (Thread/sleep 1000)
   (if (or (not (still-alive? board)) (= tics 0))
-   tics
+    tics
     (recur (update-board board) (dec tics))))
 
 (defn -main []
