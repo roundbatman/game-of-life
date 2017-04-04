@@ -10,8 +10,6 @@
 (defn next-state
   [cell neighbours]
   (case neighbours
-    0 dead
-    1 dead
     2 cell
     3 alive
     dead))
